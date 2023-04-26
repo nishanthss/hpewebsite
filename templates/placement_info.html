@@ -1,0 +1,69 @@
+{% extends 'basic.html' %}
+{% block title %}
+Placements@VVCE
+{% endblock %}
+{% block style %}
+* {
+box-sizing: border-box;
+}
+
+.column {
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+{% endblock %}
+{% block body %}
+{% load static %}
+<div class="row">
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Mountains" style="width:100%">
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Mountains" style="width:100%">
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Mountains" style="width:100%">
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="{% static 'demo.jpeg' %}" alt="Mountains" style="width:100%">
+    </div>
+</div>
+{% endblock %}
